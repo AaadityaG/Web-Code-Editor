@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: white;
+    background-color: rgb(57, 57, 57);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+}
+
+.right, .left{
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 28%;
+    background: rgb(33, 33, 33);
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+iframe{
+    width: 100%;
+    height: 95%;
+    background-color: white;
+    border: 0;
+    outline: 0;
+}
+
+label i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    background: #000000;
+    height: 30px;
+}
+
+/* responsiveness */
+@media screen and (width < 480px) {
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+    }
+    textarea{
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    label{
+        font-size: 10px;
+    }
+    .left{
+        flex-basis: 70%;
+    }
+    .right{
+        flex-basis: 30%;
+    }
+}
